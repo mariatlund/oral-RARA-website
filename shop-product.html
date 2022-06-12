@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RARA | Product</title>
+    <meta name="description" content="Welcome to RARA's universe." />
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="images/logo/favicon.png" />
+  </head>
+  <body class="shop-product">
+    <header>
+      <nav class="shop-navbar">
+        <a class="header-logo-full" href="portfolio.html"
+          ><img
+            src="images/logo/rara-logo-full-black.svg"
+            alt="header-logo-horizontal"
+        /></a>
+        <img class="cart-icon" src="images/icons/cart.svg" alt="cart-icon" />
+        <img class="menu-icon" src="images/icons/Menu.svg" alt="menu-icon" />
+      </nav>
+
+      <div class="cart-drop-down hide">
+        <div class="cart-container">
+          <div class="order-card">
+            <h1>Your cart</h1>
+            <img
+              class="close-cart close"
+              src="images/icons/cross.svg"
+              alt="close-cart"
+            />
+            <div class="order-details">
+              <img
+                class="order-image"
+                src="images/enlightened-hedonism.jpeg"
+                alt="product-image"
+              />
+
+              <div class="order-text">
+                <h4>Illustration</h4>
+                <h3>Enlightened hedonism</h3>
+              </div>
+
+              <img
+                class="delete"
+                src="images/icons/Trash.svg"
+                alt="delete-icon"
+              />
+            </div>
+            <p class="order-price">DKK 169</p>
+          </div>
+
+          <div class="shipping-info">
+            <h4>Standard Shipping & Returns</h4>
+            <p>DKK 100</p>
+          </div>
+
+          <div class="order-total">
+            <h4>Total</h4>
+            <p>DKK 269</p>
+          </div>
+
+          <div class="cart-buttons">
+            <!--<div class="cart-button gray close">Close cart</div>-->
+            <a class="cart-button" href="shop-purchase.html"
+              >Proceed to purchase</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="burger-menu-popUp hide">
+        <img class="cross-icon" src="images/icons/cross.svg" alt="cross-icon" />
+        <img
+          class="header-logo-square"
+          src="images/logo/rara-logo-square-black.svg"
+          alt="header-logo-square"
+        />
+
+        <ul>
+          <li class="left brg-home">
+            <a href="portfolio.html">
+              <h2>Home</h2>
+            </a>
+          </li>
+          <li class="left brg-portfolio">
+            <a href="portfolio-list.html"><h2>Porfolio</h2></a>
+            <ul class="extended-menu">
+              <li><a href="portfolio-list.html"> See all </a></li>
+              <li>
+                <a href="portfolio-list.html?categories=4"> Illustration </a>
+              </li>
+              <li>
+                <a href="portfolio-list.html?categories=3"> Digital Art </a>
+              </li>
+              <li>
+                <a href="portfolio-list.html?categories=8"> Merchandise </a>
+              </li>
+              <li><a href="portfolio-list.html?categories=6"> Design </a></li>
+              <li>
+                <a href="portfolio-list.html?categories=7"> Consulting </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="right brg-shop">
+            <a href="shop.html"><h2>Shop</h2> </a>
+            <ul class="extended-menu right">
+              <li><a href="shop.html"> See all </a></li>
+              <li><a href="shop.html?categories=4"> Illustration </a></li>
+              <li><a href="shop.html?categories=3"> Digital Art </a></li>
+              <li><a href="shop.html?categories=8"> Merchandise </a></li>
+              <li><a href="shop.html?categories=6"> Design </a></li>
+            </ul>
+          </li>
+
+          <li class="left brg-events">
+            <a href="eventlist.html"><h2>Events</h2></a>
+            <ul class="extended-menu">
+              <li>
+                <a href="eventlist.html"> See all </a>
+              </li>
+              <li><a href="event.html?id=178"> Current </a></li>
+            </ul>
+          </li>
+
+          <li class="right brg-about">
+            <a href="about.html"><h2>About Me</h2></a>
+            <ul class="extended-menu right">
+              <li><a href="about.html"> About </a></li>
+              <li>
+                <a class="contact-link" href="about.html#contact-form">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="brg-contacts">
+            <a class="brg-menu-contacts" href="about.html#contact-form">
+              <h2>Contacts</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <a class="back-arrow" href="shop.html">
+        <svg
+          width="17"
+          height="28"
+          viewBox="0 0 17 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17 24.71L6.49258 14L17 3.29L13.7652 0L0 14L13.7652 28L17 24.71Z"
+            fill="black"
+          />
+        </svg>
+        <p>Back to shop</p>
+      </a>
+      <template id="product-template">
+        <img
+          src="images/placeholder-image.jpg"
+          alt="Artwork Name"
+          class="product-image"
+        />
+        <h3 class="product-category">Category</h3>
+        <h2 class="product-title yellowBG">Artwork Title</h2>
+        <p class="product-description">Description</p>
+        <p class="product-price">Price</p>
+        <div class="yellow-button buy-button">Buy me</div>
+      </template>
+    </main>
+
+    <footer>
+      <img id="FTlogo" src="assets/logo-square-white.svg" alt="Logo-white" />
+
+      <h5>still here? then you shouLd DEFINITELY contact me</h5>
+
+      <ul id="footer-SoMe">
+        <li id="FTinstagram">
+          <a href="https://www.instagram.com/almostrara/" target="_blank"
+            ><img src="assets/Instagram.svg" alt="instagram-icon"
+          /></a>
+        </li>
+        <li id="FTfacebook">
+          <a href="https://www.facebook.com/rasa.drukteinyte.7" target="_blank"
+            ><img src="assets/Facebook.svg" alt="facebook-icon"
+          /></a>
+        </li>
+        <li id="FTlinkedin">
+          <a
+            href="https://www.linkedin.com/in/rasa-drukteinyte-70316b74/"
+            target="_blank"
+            ><img src="assets/LinkedIn.svg" alt="linkedin-icon"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="javascript/shop-product.js"></script>
+  </body>
+</html>

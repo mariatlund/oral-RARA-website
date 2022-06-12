@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RARA | Events</title>
+    <meta name="description" content="Welcome to RARA's universe." />
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="images/logo/favicon.png" />
+  </head>
+  <body id="event-list">
+    <header>
+      <nav class="navbar">
+        <a class="header-logo-full" href="portfolio.html"
+          ><img
+            src="images/logo/rara-logo-full-black.svg"
+            alt="header-logo-horizontal"
+        /></a>
+        <img class="menu-icon" src="images/icons/Menu.svg" alt="menu-icon" />
+      </nav>
+      <div class="burger-menu-popUp hide">
+        <img class="cross-icon" src="images/icons/cross.svg" alt="cross-icon" />
+        <img
+          class="header-logo-square"
+          src="images/logo/rara-logo-square-black.svg"
+          alt="header-logo-square"
+        />
+
+        <ul>
+          <li class="left brg-home">
+            <a href="portfolio.html">
+              <h2>Home</h2>
+            </a>
+          </li>
+          <li class="left brg-portfolio">
+            <a href="portfolio-list.html"><h2>Porfolio</h2></a>
+            <ul class="extended-menu">
+              <li><a href="portfolio-list.html"> See all </a></li>
+              <li>
+                <a href="portfolio-list.html?categories=4"> Illustration </a>
+              </li>
+              <li>
+                <a href="portfolio-list.html?categories=3"> Digital Art </a>
+              </li>
+              <li>
+                <a href="portfolio-list.html?categories=8"> Merchandise </a>
+              </li>
+              <li><a href="portfolio-list.html?categories=6"> Design </a></li>
+              <li>
+                <a href="portfolio-list.html?categories=7"> Consulting </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="right brg-shop">
+            <a href="shop.html"><h2>Shop</h2> </a>
+            <ul class="extended-menu right">
+              <li><a href="shop.html"> See all </a></li>
+              <li><a href="shop.html?categories=4"> Illustration </a></li>
+              <li><a href="shop.html?categories=3"> Digital Art </a></li>
+              <li><a href="shop.html?categories=8"> Merchandise </a></li>
+              <li><a href="shop.html?categories=6"> Design </a></li>
+            </ul>
+          </li>
+
+          <li class="left brg-events">
+            <a href="eventlist.html"><h2>Events</h2></a>
+            <ul class="extended-menu">
+              <li>
+                <a href="eventlist.html"> See all </a>
+              </li>
+              <li><a href="event.html?id=178"> Current </a></li>
+            </ul>
+          </li>
+
+          <li class="right brg-about">
+            <a href="about.html"><h2>About Me</h2></a>
+            <ul class="extended-menu right">
+              <li><a href="about.html"> About </a></li>
+              <li>
+                <a class="contact-link" href="about.html#contact-form">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="brg-contacts">
+            <a class="brg-menu-contacts" href="about.html#contact-form">
+              <h2>Contacts</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <h1>Events</h1>
+      <div class="current-event-container">
+        <div class="current-event-text">
+          <h3>Current Event</h3>
+          <h2>Nothing exists in isolation</h2>
+          <h3 class="event-credits">RARA x Kintobe</h3>
+        </div>
+        <img
+          src="images/nothing-exists-in-isolation_exhibition.JPG"
+          alt="current-exposition-photo"
+        />
+        <a class="yellow-button" href="event.html?id=178">Read more</a>
+      </div>
+
+      <div class="past-events-container">
+        <h3>Past Events</h3>
+
+        <template id="past-events-template">
+          <div class="event-container">
+            <img
+              class="event-image"
+              src="images/placeholder-image.jpg"
+              alt="exhibition-image"
+            />
+            <h2 class="event-title">Event title</h2>
+            <div class="event-date">
+              <h4>Date:</h4>
+              <p>Event date</p>
+            </div>
+
+            <div class="event-location">
+              <h4>Location:</h4>
+              <p>Event location</p>
+            </div>
+            <a class="event-link yellow-button" href="#">Read more</a>
+          </div>
+        </template>
+      </div>
+    </main>
+
+    <footer>
+      <img id="FTlogo" src="assets/logo-square-white.svg" alt="Logo-white" />
+
+      <h5>still here? then you shouLd DEFINITELY contact me</h5>
+
+      <ul id="footer-SoMe">
+        <li id="FTinstagram">
+          <a href="https://www.instagram.com/almostrara/" target="_blank"
+            ><img src="assets/Instagram.svg" alt="instagram-icon"
+          /></a>
+        </li>
+        <li id="FTfacebook">
+          <a href="https://www.facebook.com/rasa.drukteinyte.7" target="_blank"
+            ><img src="assets/Facebook.svg" alt="facebook-icon"
+          /></a>
+        </li>
+        <li id="FTlinkedin">
+          <a
+            href="https://www.linkedin.com/in/rasa-drukteinyte-70316b74/"
+            target="_blank"
+            ><img src="assets/LinkedIn.svg" alt="linkedin-icon"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="javascript/event-list.js"></script>
+  </body>
+</html>

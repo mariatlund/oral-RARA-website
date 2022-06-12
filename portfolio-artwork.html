@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RARA | Artwork</title>
+    <meta name="description" content="Welcome to RARA's universe." />
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="images/logo/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="header-logo-full" href="portfolio.html"
+          ><img
+            src="images/logo/rara-logo-full-black.svg"
+            alt="header-logo-horizontal"
+        /></a>
+        <img class="menu-icon" src="images/icons/Menu.svg" alt="menu-icon" />
+      </nav>
+      <div class="burger-menu-popUp hide">
+        <img class="cross-icon" src="images/icons/cross.svg" alt="cross-icon" />
+        <img
+          class="header-logo-square"
+          src="images/logo/rara-logo-square-black.svg"
+          alt="header-logo-square"
+        />
+
+        <ul>
+          <li class="left brg-home">
+            <a href="portfolio.html">
+              <h2>Home</h2>
+            </a>
+          </li>
+          <li class="left brg-portfolio">
+            <a href="portfolio-list.html"><h2>Porfolio</h2></a>
+            <ul class="extended-menu">
+              <li><a href="portfolio-list.html"> See all </a></li>
+              <li>
+                <a href="portfolio-list.html?categories=4"> Illustration </a>
+              </li>
+              <li>
+                <a href="portfolio-list.html?categories=3"> Digital Art </a>
+              </li>
+              <li>
+                <a href="portfolio-list.html?categories=8"> Merchandise </a>
+              </li>
+              <li><a href="portfolio-list.html?categories=6"> Design </a></li>
+              <li>
+                <a href="portfolio-list.html?categories=7"> Consulting </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="right brg-shop">
+            <a href="shop.html"><h2>Shop</h2> </a>
+            <ul class="extended-menu right">
+              <li><a href="shop.html"> See all </a></li>
+              <li><a href="shop.html?categories=4"> Illustration </a></li>
+              <li><a href="shop.html?categories=3"> Digital Art </a></li>
+              <li><a href="shop.html?categories=8"> Merchandise </a></li>
+              <li><a href="shop.html?categories=6"> Design </a></li>
+            </ul>
+          </li>
+
+          <li class="left brg-events">
+            <a href="eventlist.html"><h2>Events</h2></a>
+            <ul class="extended-menu">
+              <li>
+                <a href="eventlist.html"> See all </a>
+              </li>
+              <li><a href="event.html?id=178"> Current </a></li>
+            </ul>
+          </li>
+
+          <li class="right brg-about">
+            <a href="about.html"><h2>About Me</h2></a>
+            <ul class="extended-menu right">
+              <li><a href="about.html"> About </a></li>
+              <li>
+                <a class="contact-link" href="about.html#contact-form">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="brg-contacts">
+            <a class="brg-menu-contacts" href="about.html#contact-form">
+              <h2>Contacts</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main-portfolio-artwork">
+      <a class="back-arrow" href="portfolio-list.html">
+        <svg
+          width="17"
+          height="28"
+          viewBox="0 0 17 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17 24.71L6.49258 14L17 3.29L13.7652 0L0 14L13.7652 28L17 24.71Z"
+            fill="black"
+          />
+        </svg>
+        <p>Back to portfolio</p>
+      </a>
+      <template id="artworkTemplate">
+        <div class="artwork-container">
+          <img
+            src="images/placeholder-image.jpg"
+            alt="Artwork Name"
+            class="artwork-image"
+          />
+          <div class="artwork-text">
+            <h2 class="artwork-category">Category</h2>
+            <h1 class="artwork-title">Artwork Title</h1>
+
+            <p class="artwork-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id magni
+              totam aut vel. Dolores, laudantium totam. Incidunt, magni
+              exercitationem! Iusto velit molestiae aspernatur delectus maiores
+              incidunt explicabo? Architecto, cumque ipsam.
+            </p>
+          </div>
+        </div>
+      </template>
+    </main>
+
+    <footer>
+      <img id="FTlogo" src="assets/logo-square-white.svg" alt="Logo-white" />
+
+      <h5>still here? then you shouLd DEFINITELY contact me</h5>
+
+      <ul id="footer-SoMe">
+        <li id="FTinstagram">
+          <a href="https://www.instagram.com/almostrara/" target="_blank"
+            ><img src="assets/Instagram.svg" alt="instagram-icon"
+          /></a>
+        </li>
+        <li id="FTfacebook">
+          <a href="https://www.facebook.com/rasa.drukteinyte.7" target="_blank"
+            ><img src="assets/Facebook.svg" alt="facebook-icon"
+          /></a>
+        </li>
+        <li id="FTlinkedin">
+          <a
+            href="https://www.linkedin.com/in/rasa-drukteinyte-70316b74/"
+            target="_blank"
+            ><img src="assets/LinkedIn.svg" alt="linkedin-icon"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="javascript/portfolio-artwork.js"></script>
+  </body>
+</html>
