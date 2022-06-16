@@ -1,3 +1,6 @@
+// PAGELOADER
+window.addEventListener("DOMContentLoaded", init);
+
 //-------BURGER MENU-------
 document.querySelector(".menu-icon").addEventListener("click", showBRGMenu);
 
@@ -97,6 +100,9 @@ function showCategory() {
 }
 
 async function displayArtworks(userJSON) {
+  // hide pageloader
+  document.querySelector(".page-loader-container").classList.add("hide");
+
   userJSON.forEach((artwork) => {
     // select template & copy
     const template = document.querySelector("#shop-list-template").content;

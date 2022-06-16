@@ -21,6 +21,48 @@
   --shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+/* ---------- PAGE LOADER ---------- */
+
+.page-loader-container {
+  background-color: var(--bg-color);
+  aspect-ratio: 9/16;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
+  position: absolute;
+  z-index: 4;
+}
+
+.page-loader {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
+  width: 40%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  position: relative;
+}
+
+.page-loader-logo {
+  width: 25%;
+  position: absolute;
+  align-self: center;
+}
+
+.page-loader-spin {
+  animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
 /*---------- NAVIGATION ----------*/
 header {
   width: 100%;

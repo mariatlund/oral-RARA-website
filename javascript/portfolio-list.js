@@ -1,3 +1,6 @@
+// PAGELOADER
+window.addEventListener("DOMContentLoaded", init);
+
 //-------BURGER MENU-------
 document.querySelector(".menu-icon").addEventListener("click", showBRGMenu);
 
@@ -28,20 +31,9 @@ function dropDown() {
   document
     .querySelector(".select-category-container")
     .addEventListener("click", backUp);
-
-  // document
-  //   .querySelectorAll(".illustration")
-  //   .addEventListener("click", showSelection);
 }
 
-// function showSelection() {
-//   console.log("showSelection");
-//   // this.classList.add("selected");
-//   document.querySelector(".see-all").classList.remove("selected");
-// }
-
 function backUp() {
-  // document.querySelector(".categories-drop-down").classList.add("hide");
   document.querySelector(".drop-down-arrow").classList.remove("up-arrow");
 
   document.querySelector(".categories-drop-down").classList.toggle("hide");
@@ -58,7 +50,7 @@ function backUp() {
 
 // ---------- SHOW ALL PRODUCTS / SHOW SELECTED CATEGORY ----------
 
-window.addEventListener("DOMContentLoaded", init);
+// window.addEventListener("DOMContentLoaded", init);
 
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("categories");
@@ -104,6 +96,10 @@ function showCategory() {
 
 async function displayArtworks(userJSON) {
   console.log("Displaying Artworks");
+
+  // hide pageloader
+  document.querySelector(".page-loader-container").classList.add("hide");
+
   userJSON.forEach((artwork) => {
     // select template & copy
     const template = document.querySelector("#portfolio-list-template").content;

@@ -27,6 +27,9 @@ async function loadData() {
   displayEvents(eventData);
 }
 async function displayEvents(userJSON) {
+  // hide pageloader
+  document.querySelector(".page-loader-container").classList.add("hide");
+
   userJSON.forEach((event) => {
     // select template & copy
     const template = document.querySelector("#past-events-template").content;

@@ -1,3 +1,6 @@
+// PAGELOADER
+window.addEventListener("DOMContentLoaded", init);
+
 //-------BURGER MENU-------
 document.querySelector(".menu-icon").addEventListener("click", showBRGMenu);
 
@@ -19,12 +22,17 @@ const id = urlParams.get("id");
 const url =
   "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/event/" + `${id}?_embed`;
 
-fetch(url)
-  .then((res) => res.json())
-  .then((data) => displayEvent(data));
+function init() {
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => displayEvent(data));
+}
 
 function displayEvent(event) {
   console.log(event);
+
+  // hide pageloader
+  document.querySelector(".page-loader-container").classList.add("hide");
 
   // grab template
   const template = document.querySelector("#event-template").content;

@@ -1,3 +1,12 @@
+// PAGELOADER
+
+window.addEventListener("DOMContentLoaded", showContent);
+// window.addEventListener("animationiteration", showContent);
+
+function showContent() {
+  document.querySelector(".page-loader-container").classList.add("hide");
+}
+
 //-------BURGER MENU-------
 document.querySelector(".menu-icon").addEventListener("click", showBRGMenu);
 

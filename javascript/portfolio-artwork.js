@@ -1,3 +1,6 @@
+// PAGELOADER
+window.addEventListener("DOMContentLoaded", init);
+
 //-------BURGER MENU-------
 document.querySelector(".menu-icon").addEventListener("click", showBRGMenu);
 
@@ -20,12 +23,17 @@ const url =
   "https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/product/" +
   `${id}?_embed`;
 
-fetch(url)
-  .then((res) => res.json())
-  .then((data) => displayArtwork(data));
+function init() {
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => displayArtwork(data));
+}
 
 function displayArtwork(artwork) {
   console.log(artwork);
+
+  // hide pageloader
+  document.querySelector(".page-loader-container").classList.add("hide");
 
   // grab template
   const template = document.querySelector("#artworkTemplate").content;
