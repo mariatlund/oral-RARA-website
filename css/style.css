@@ -1404,6 +1404,11 @@ input[id="cvc"] {
 
 /*----tablet screen size----*/
 @media only screen and (min-width: 700px) {
+  /* ------- pageloader ------- */
+  .page-loader {
+    width: 30%;
+  }
+
   /*------- navigation -------*/
   .navbar {
     padding: calc(var(--half-margin) / 2) var(--half-margin);
@@ -1851,6 +1856,11 @@ input[id="cvc"] {
 
 /*----desktop screen size----*/
 @media only screen and (min-width: 900px) {
+  /* ------- pageloader ------- */
+  .page-loader {
+    width: 20%;
+  }
+
   /*------- navigation -------*/
   .menu-icon {
     grid-column: 3/4;
@@ -2220,6 +2230,11 @@ input[id="cvc"] {
 
 /*----wide screen size----*/
 @media only screen and (min-width: 1100px) {
+  /* ------- pageloader ------- */
+  .page-loader {
+    width: 15%;
+  }
+
   /*------- about page -------*/
   .rara-img {
     aspect-ratio: 4/3;
