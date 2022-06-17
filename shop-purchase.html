@@ -194,7 +194,11 @@
       </div>
 
       <section class="step-1">
-        <form class="form-purchase-flow" action="#" method="get">
+        <form
+          class="form-purchase-flow form-1"
+          action="https://cloudmae.dk/rara/wp_SEM2-EXAM/wp-json/wp/v2/input"
+          method="GET"
+        >
           <div class="fields">
             <label class="labelStyle" for="name">Full Name </label>
             <input
@@ -257,7 +261,10 @@
           >
             Back
           </button>
-          <button class="yellow-button step-1-button" type="submit">
+          <button
+            class="yellow-button step-1-button"
+            onclick="displayFormInput()"
+          >
             Continue
           </button>
         </div>

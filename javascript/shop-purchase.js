@@ -79,3 +79,25 @@ function step4() {
     .querySelector(".step-indicator")
     .classList.add("order-indicator-step4");
 }
+
+// ----- SHOWING FORM INPUT ---
+
+function displayFormInput() {
+  const inputName = document.querySelector("#name").value;
+  const inputAddress = document.querySelector("#address").value;
+  const inputPostcode = document.querySelector("#postcode").value;
+  const inputEmail = document.querySelector("#email").value;
+  const inputPhone = document.querySelector("#phone").value;
+
+  // show address info (billing & shipping)
+  document.querySelector("#billing-fullName").textContent = inputName;
+  document.querySelector("#billing-address").textContent = inputAddress;
+  document.querySelector("#billing-postcode").textContent = inputPostcode;
+
+  document.querySelector("#shipping-fullName").textContent = inputName;
+  document.querySelector("#shipping-address").textContent = inputAddress;
+  document.querySelector("#shipping-postcode").textContent = inputPostcode;
+
+  document.querySelector("#emailAddress").textContent = inputEmail;
+  document.querySelector("#phoneNumber").textContent = inputPhone;
+}
