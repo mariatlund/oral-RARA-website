@@ -363,6 +363,7 @@ p {
   margin: var(--half-margin);
   box-shadow: var(--shadow);
   border: none;
+  cursor: pointer;
 }
 
 .yellow-button:hover {
