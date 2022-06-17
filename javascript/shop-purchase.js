@@ -37,8 +37,19 @@ function step2() {
   // show step 2
   document.querySelector(".step-2").classList.remove("hide");
 
-  // step 2 button
+  // step 2 buttons
   document.querySelector(".step-2-button").addEventListener("click", step3);
+  document.querySelector(".step-2-back").addEventListener("click", backToStep1);
+}
+
+function backToStep1() {
+  document.querySelector(".step-2").classList.add("hide");
+  document.querySelector(".step-1").classList.remove("hide");
+
+  // change step indicator
+  document.querySelector(".step-title").textContent =
+    "Step 1 - Personal Details";
+  document.querySelector(".step-img").src = "images/purchase-steps-1.svg";
 }
 
 function step3() {
@@ -53,8 +64,19 @@ function step3() {
   // show step 3
   document.querySelector(".step-3").classList.remove("hide");
 
-  // step 3 button
+  // step 3 buttons
   document.querySelector(".step-3-button").addEventListener("click", step4);
+  document.querySelector(".step-3-back").addEventListener("click", backToStep2);
+}
+
+function backToStep2() {
+  document.querySelector(".step-3").classList.add("hide");
+  document.querySelector(".step-2").classList.remove("hide");
+
+  // change step indicator
+  document.querySelector(".step-title").textContent =
+    "Step 2 - Payment Information";
+  document.querySelector(".step-img").src = "images/purchase-steps-2.svg";
 }
 
 function step4() {
