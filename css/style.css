@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Barrio&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@font-face {
+  font-family: WishfulWaves;
+  src: url(../font/WISHFULWAVES.ttf);
+}
+
 :root {
   /*color palette*/
   --bg-color: #ffffff;
@@ -317,9 +322,9 @@ p {
   background-color: var(--accent-color);
   padding: calc(var(--half-margin) / 4);
 }
-/*---------- INDEX / LANDING PAGE ----------*/
+/*---------- OLD INDEX / LANDING PAGE ----------*/
 
-.index-body {
+/* .index-body {
   background-color: var(--primary-color);
   color: var(--bg-color);
 }
@@ -345,7 +350,64 @@ p {
 .index-buttons {
   display: flex;
   flex-direction: column;
+} */
+
+/* ---------- NEW INDEX / HOME PAGE ---------- */
+
+.index {
+  margin: var(--margin);
+  display: grid;
+  grid-template-columns: 1fr;
 }
+
+.index-h1 {
+  font-family: WishfulWaves;
+  height: 100%;
+  margin-top: var(--double-margin);
+  margin-inline: var(--margin);
+  font-size: 1.8rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.index h2 {
+  font-family: WishfulWaves;
+}
+
+.index-h3 {
+  margin: var(--margin);
+}
+
+.index .icons {
+  margin: var(--half-margin);
+}
+
+.index .portfolio-video-container {
+  width: 100%;
+  margin-top: calc(var(--double-margin) * 4.5);
+}
+
+.index-button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+}
+
+.index .yellow-button {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.index .yellow-button:hover {
+  background-image: url(../images/icons/hover-effects/Hover-effect-rectangualr-yellow.svg);
+}
+
+.index .portfolio-instagram-container h2 {
+  font-family: var(--text-font);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
 /*---------- BUTTONS ----------*/
 
 .yellow-button {
