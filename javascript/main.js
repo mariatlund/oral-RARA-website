@@ -63,7 +63,7 @@ function muteSound() {
 
 let width = window.innerWidth;
 
-if (width < 600) {
+if (width < 700) {
   document
     .querySelector("#myVideo")
     .setAttribute("src", "video/phone-view-small.mp4");
