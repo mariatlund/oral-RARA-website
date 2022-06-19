@@ -362,7 +362,6 @@ p {
 
 .index-h1 {
   font-family: WishfulWaves;
-  height: 100%;
   margin-top: var(--double-margin);
   margin-inline: var(--margin);
   font-size: 1.7rem;
