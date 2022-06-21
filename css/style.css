@@ -368,12 +368,12 @@ p {
   font-size: 1.7rem;
   position: absolute;
   z-index: 2;
-  width: 88%;
+  max-width: 88%;
 }
 
-.index-h1 img {
-  max-width: 100%;
-}
+/* .index-h1 img {
+  max-width: 70%;
+} */
 
 .index h2 {
   font-family: WishfulWaves;
