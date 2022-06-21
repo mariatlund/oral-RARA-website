@@ -101,7 +101,8 @@ header {
 }
 
 .burger-menu-popUp {
-  aspect-ratio: 9/18;
+  aspect-ratio: 9/16;
+  height: 100vh;
   background-color: var(--accent-color);
   display: grid;
   grid-template-rows: auto 35% 65%;
